@@ -29,6 +29,14 @@ app.post('/cheeses', function(req, res){
 	res.redirect('/cheeses')
 })
 
+app.put('/cheeses/:id' function(req, res){
+	//// update some shit
+})
+
+app.deelete('/cheeses/:id', function(req, res){
+	//// deleting that shit
+})
+
 app.listen(3000, function(){
     console.log('listening on port 3000!')
 });
