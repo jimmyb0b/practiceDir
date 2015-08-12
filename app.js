@@ -24,6 +24,11 @@ app.get('/cheeses', function(req, res){
 	res.render('/file')
 })
 
+app.post('/cheeses', function(req, res){
+	////take some data and do stuff
+	res.redirect('/cheeses')
+})
+
 app.listen(3000, function(){
     console.log('listening on port 3000!')
 });
