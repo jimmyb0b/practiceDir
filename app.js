@@ -15,6 +15,15 @@ app.use(methodOverride('_method'));
 
 app.set('view_engine', 'ejs');
 
+
+app.get('/' function(req, res){
+	res.redirect('/cheeses')
+})
+
+app.get('/cheeses', function(req, res){
+	res.render('/file')
+})
+
 app.listen(3000, function(){
     console.log('listening on port 3000!')
 });
